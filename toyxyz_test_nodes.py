@@ -115,7 +115,7 @@ class LoadWebcamImage:
     def INPUT_TYPES(cls):
         return {
                 "required": {
-                    "image_path": ("STRING", {"default": './ComfyUI/custom_nodes/ComfyUI_toyxyz_test_nodes/CaptureCam/captured_frames/capture.jpg', "multiline": False}), 
+                    "image_path": ("STRING", {"default": './ComfyUI/custom_nodes/CameraNodes/CaptureCam/captured_frames/capture.jpg', "multiline": False}), 
                 }
             }
 
@@ -172,7 +172,7 @@ class SaveImagetoPath:
 
     INPUT_TYPES = lambda: {
         "required": {
-            "path": ("STRING", {"default": "./ComfyUI/custom_nodes/ComfyUI_toyxyz_test_nodes/CaptureCam/rendered_frames/render.jpg"}),
+            "path": ("STRING", {"default": "./ComfyUI/custom_nodes/CameraNodes/CaptureCam/rendered_frames/render.jpg"}),
             "image": ("IMAGE",),
             "save_sequence": (("false", "true"), {"default": "false"}),
             "image_format": ((".jpg", ".png", ".bmp"), {"default": ".jpg"}),
